@@ -1,0 +1,54 @@
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException, ParseException {
+
+        JSONParser parser = new JSONParser();
+        JSONArray arr = (JSONArray) parser.parse(new FileReader("D:\\Учеба\\Программирование\\Lab5\\src\\data.json"));
+
+        for(Object o : arr) {
+            JSONObject obj = (JSONObject) o;
+
+            long id = (Long) obj.get("id");
+            String name = (String) obj.get("name");
+
+            Integer x_int = (Integer) obj.get("x");
+            Double y_doub = (Double) obj.get("y");
+            Coordinates coordinates = new Coordinates();
+            coordinates.setX(x_int);
+            coordinates.setY(y_doub);
+            //java.time.LocalDateTime creationDate = (java.time.LocalDateTime) obj.get("creationDate");
+            long numberOfParticipants = (long) obj.get("numberOfParticipants");
+            long singlesCount = (long) obj.get("singlesCount");
+            Integer albumsCount = (Integer) obj.get("albumsCount");
+            String genre = (String) obj.get("genre");
+            String name_str = (String) obj.get("name");
+            String address_str = (String) obj.get("address");
+            Studio studio = new Studio();
+            studio.setName(name_str);
+            studio.setName(address_str);
+            System.out.println(id);
+            System.out.println(name);
+            System.out.println(coordinates.getX() + " " + coordinates.getY());
+            System.out.println(numberOfParticipants);
+            System.out.println(singlesCount);
+            //System.out.println(creationDate);
+            System.out.println(albumsCount);
+            System.out.println(genre);
+            System.out.println(studio.getName() + " " + studio.getAddress());
+
+        }
+
+
+
+        //ArrayList<String> musicBandCol = new ArrayList<>();
+        //Collections.sort(musicBandCol);
+    }
+}

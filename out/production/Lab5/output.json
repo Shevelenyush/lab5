@@ -1,0 +1,49 @@
+[ {
+    "id": 1 ,
+    "name": "John",
+    "coordinates": {
+      "x": 4,
+      "y": 0.1
+    },
+    "creationDate": "Thu Jun 03 16:18:26 MSK 2021",
+    "numberOfParticipants": 1,
+    "singlesCount": 1,
+    "albumsCount": 12,
+    "genre": "BRIT_POP",
+    "studio": {
+      "name": "Name_of_that",
+      "address": "Some_address"
+    }
+  },{
+    "id": 2 ,
+    "name": "Twenty One Pilots",
+    "coordinates": {
+      "x": 12,
+      "y": 0.4
+    },
+    "creationDate": "Thu Jun 03 16:18:26 MSK 2021",
+    "numberOfParticipants": 2,
+    "singlesCount": 100,
+    "albumsCount": 5,
+    "genre": "PROGRESSIVE_ROCK",
+    "studio": {
+      "name": "Name_of_that",
+      "address": "Some_address"
+    }
+  },{
+    "id": 9066409019136824647 ,
+    "name": "name",
+    "coordinates": {
+      "x": 123,
+      "y": 123.0
+    },
+    "creationDate": "Thu Jun 03 16:19:02 MSK 2021",
+    "numberOfParticipants": 12,
+    "singlesCount": 32,
+    "albumsCount": 3,
+    "genre": "BRIT_POP",
+    "studio": {
+      "name": "saasd",
+      "address": "vfvf"
+    }
+  }]
